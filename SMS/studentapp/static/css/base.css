@@ -1,0 +1,50 @@
+.c_nav {
+    background-color: #21354e;
+}
+
+
+
+.c_ul {
+    display: flex;
+    justify-content: center;
+}
+
+.c_li a {
+    color: rgb(176, 172, 227);
+}
+
+
+.custom_logo {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.custom_logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pikachu {
+    color: white;
+}
+
+.pikachu i {
+    font-size: 1.2rem;
+}
+
+.rl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.rl i {
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* -----------------footer------------------ */

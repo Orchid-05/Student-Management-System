@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{%block start%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static 'css/about.css' %}">
+    <title>About us</title>
+</head>
+<body>
+    <div class="section">
+    <div class="container py-5">
+        <div class="twohead">
+            <h3 class="py-3">Best of the best</h3>
+            <h1 class="py-3">Create Your Beautiful Websites from Just a Prompt</h1>
+            <h5 class="py-3">Build websites in minutes with the #1 AI website building platform</h5>
+        </div>
+        <div class="banner">
+            <img src="{%static 'images/bitcoin_cryptocurrency_physical_coin.jpg' %}" alt="">
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
+{% endblock %}

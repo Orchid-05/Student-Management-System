@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+
+{% load static %} <!-- Load static files here -->
+
+{% block start %}
+
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+<div class="section">
+    <div class="container py-5">
+        <h3>Today's Timetable</h3>
+        <div class="row mt-4">
+            <!-- Columns -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="cs">
+                    <div class="class_time">
+                        <p>7:00 am - 8:00 am</p>
+                    </div>
+                    <div class="subj_name">
+                        <h5>Database</h5>
+                        <h6>Prakash dada</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="cs">
+                    <div class="class_time">
+                        <p>7:00 am - 8:00 am</p>
+                    </div>
+                    <div class="subj_name">
+                        <h5>Database</h5>
+                        <h6>Prakash dada</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="cs">
+                    <div class="class_time">
+                        <p>7:00 am - 8:00 am</p>
+                    </div>
+                    <div class="subj_name">
+                        <h5>Database</h5>
+                        <h6>Prakash dada</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="cs">
+                    <div class="class_time">
+                        <p>7:00 am - 8:00 am</p>
+                    </div>
+                    <div class="subj_name">
+                        <h5>Database</h5>
+                        <h6>Prakash dada</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

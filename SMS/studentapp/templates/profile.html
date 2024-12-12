@@ -1,0 +1,104 @@
+{% load static %}
+
+{% block start %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+
+<head>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+    <title>Profile</title>
+</head>
+
+<style>
+    .dp_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .dp {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .dp img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container p {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .container button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .container button:hover {
+        background-color: #0056b3;
+    }
+
+    .profile_banner {
+        border: 2px solid green;
+        width: 400px;
+        height: 100%;
+        padding: 1rem;
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div class="section">
+        {% if messages %}
+        <div class="alert alert-info">
+            {% for message in messages %}
+            <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+        <div class="container p-5">
+            <div class="profile_banner">
+                <!-- Display success or error messages -->
+
+                <div class="dp_info">
+                    <div class="dp">
+                        <!-- Display the profile picture dynamically -->
+                        {% if user.student.profile_picture %}
+                        <img src="{{ user.student.profile_picture.url }}" alt="Profile Picture">
+                        {% else %}
+                        <img src="{% static 'images/dp.jpg' %}" alt="Default Profile Picture">
+                        {% endif %}
+                    </div>
+                    <p class="mt-3">{{ user.username }}</p> <!-- Display authenticated user's username -->
+                    <a href="{% url 'edit_profile' %}" class="btn btn-primary">Edit Profile</a>
+                    <a href="{% url 'home' %}" class="btn btn-primary mt-3">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>
+
+{% endblock %}

@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block start %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">All Courses</h2>
+    <div class="row">
+        <!-- Course Card Template -->
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{%static 'images/bitcoin_cryptocurrency_physical_coin.jpg' %}" class="card-img-top"
+                    alt="Data Science">
+                <div class="card-body">
+                    <h5 class="card-title">Data Science</h5>
+                    <p class="card-text">Learn the fundamentals of data science, including data analysis, visualization,
+                        and machine learning.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{%static 'images/AI.jpg' %}" class="card-img-top" alt="AI">
+                <div class="card-body">
+                    <h5 class="card-title">Artificial Intelligence</h5>
+                    <p class="card-text">Explore artificial intelligence concepts, machine learning algorithms, and
+                        neural networks.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{%static 'images/cyber_ecurity.jpg' %}" class="card-img-top" alt="Cyber Security">
+                <div class="card-body">
+                    <h5 class="card-title">Cyber Security</h5>
+                    <p class="card-text">Learn about network security, ethical hacking, and how to protect against cyber
+                        threats.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{%static 'images/bitcoin_cryptocurrency_physical_coin.jpg' %}" class="card-img-top"
+                    alt="Software Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Software Engineering</h5>
+                    <p class="card-text">Gain knowledge in software development, design patterns, and best practices for
+                        building scalable applications.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{%static 'images/robotics.jpg' %}" class="card-img-top" alt="Robotics">
+                <div class="card-body">
+                    <h5 class="card-title">Robotics</h5>
+                    <p class="card-text">Explore the world of robotics, including automation, sensor integration, and
+                        robotic programming.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <img src="{%static 'images/cs.jpg' %}" class="card-img-top" alt="Computer Science">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Science</h5>
+                    <p class="card-text">Learn about algorithms, data structures, and the foundational concepts of
+                        computer science.</p>
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
